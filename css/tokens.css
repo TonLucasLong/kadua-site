@@ -1,5 +1,4 @@
 /* Hallmark · genre: editorial (warm, photo-led) · macrostructure: Marquee Hero with finder module · theme: custom (vibe: "calm premium companion, warm paper, deep green, one clay for crisis") · paper oklch(96.8% 0.012 85) · accent oklch(37% 0.07 165) deep green · nav: N1b (wordmark, four links, one urgent control) · footer: Ft1 mast-headed
- * axes: light paper / roman serif display (Newsreader) / chromatic-other (green) · differs from v1 (Index-First, Garden/Fraunces) on macrostructure, nav, footer, display face
  * pre-emit critique: P4 H5 E4 S4 R4 V4 */
 :root {
   --color-paper:        #f7f5ef;
@@ -17,7 +16,10 @@
   --color-urgent-soft:  #f6e8e1;
   --color-on-accent:    #f7f5ef;
   --color-focus:        #2f6fb5;
+  --color-surface:      #ffffff;
   --shadow-card:        0 10px 30px -18px rgba(46, 42, 40, 0.35);
+  --shadow-sticky:      0 -10px 30px -22px rgba(46, 42, 40, 0.4);
+  --shadow-header:      0 1px 0 #ddd8cc, 0 10px 30px -22px rgba(46, 42, 40, 0.35);
   --shadow-card-hover:  0 18px 40px -20px rgba(46, 42, 40, 0.45);
 
   --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;

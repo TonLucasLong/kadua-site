@@ -9,7 +9,6 @@
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
     }, { rootMargin: "0px 0px -5% 0px", threshold: 0 });
     els.forEach(function (e) { io.observe(e); });
-    setTimeout(function () { els.forEach(function (e) { e.classList.add("is-in"); }); }, 1500);
   }
   var header = document.querySelector(".site-header");
   if (header) {
@@ -23,6 +22,8 @@
     toggle.addEventListener("click", function () {
       var open = menu.classList.toggle("is-open"); toggle.setAttribute("aria-expanded", open ? "true" : "false"); document.body.classList.toggle("menu-open", open);
     });
-    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { menu.classList.remove("is-open"); toggle.setAttribute("aria-expanded", "false"); document.body.classList.remove("menu-open"); }); });
+    function close() { menu.classList.remove("is-open"); toggle.setAttribute("aria-expanded", "false"); document.body.classList.remove("menu-open"); }
+    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", close); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menu.classList.contains("is-open")) { close(); toggle.focus(); } });
   }
 })();

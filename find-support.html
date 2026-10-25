@@ -22,7 +22,7 @@
     </ul>
     <div class="nav__right">
       <a class="btn btn--urgent" href="immediate-help.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Need help now</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" ><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="nav-toggle__label">Menu</span></button>
     </div>
   </div>
   <nav class="sheet" id="site-menu" aria-label="Sections">
@@ -41,10 +41,10 @@
       <h1>Find professional support</h1>
       <p class="lede">Psychologists, psychiatrists, guidance counselors, and organizations, with the basics you need to choose: what they do, how they meet, where, and roughly what it costs. Not sure who to look for? Start with <a href="guides/choosing-a-professional.html">who do I need?</a></p>
     </div>
-    <div class="page-hero__photo" data-reveal style="--d:120ms"><img src="img/counsel-room-1600.jpg" srcset="img/counsel-room-800.jpg 800w, img/counsel-room-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="1600" height="1280" alt="A counselor's room with two chairs and striped sunlight"></div>
+    <div class="page-hero__photo d2" data-reveal><img src="img/counsel-room-1600.jpg" srcset="img/counsel-room-800.jpg 800w, img/counsel-room-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="800" height="536" alt="A counselor's room with two chairs and striped sunlight"></div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <section class="section pt-0">
     <div class="wrap">
       <div class="notice" role="note" data-reveal><strong>Sample listings.</strong> The entries below show how the directory works. They are not real providers. Real listings appear only after Kadua's verification process confirms the license and contact details. Until then, the lines on the <a href="immediate-help.html">Immediate Help</a> page are the confirmed routes.</div>
       <form class="filters" id="filters" aria-label="Filter listings" onsubmit="return false">
@@ -72,10 +72,10 @@
       <div class="section__head" data-reveal><h2>How listings are verified</h2><p>Five steps before a name appears, and a recheck on a schedule after.</p></div>
       <ol class="steps">
         <li data-reveal><b>Application</b><p>A professional or organization submits their details and license number.</p></li>
-        <li data-reveal style="--d:80ms"><b>License and contact check</b><p>The license is checked on the Professional Regulation Commission's online verification; the phone, email, or booking link is confirmed to reach them; fees are confirmed current.</p></li>
-        <li data-reveal style="--d:160ms"><b>Adviser review and recheck</b><p>A licensed adviser reviews the listing before it goes live. Every listing is rechecked on a schedule and carries its last-checked date; one that fails comes down until fixed.</p></li>
+        <li class="d1" data-reveal><b>License and contact check</b><p>The license is checked on the Professional Regulation Commission's online verification; the phone, email, or booking link is confirmed to reach them; fees are confirmed current.</p></li>
+        <li class="d3" data-reveal><b>Adviser review and recheck</b><p>A licensed adviser reviews the listing before it goes live. Every listing is rechecked on a schedule and carries its last-checked date; one that fails comes down until fixed.</p></li>
       </ol>
-      <p class="muted" style="margin-top:var(--space-lg)">Kadua lists; it does not endorse or supervise care. Your relationship is with the professional you choose.</p>
+      <p class="muted mt-lg">Kadua lists; it does not endorse or supervise care. Your relationship is with the professional you choose.</p>
     </div>
   </section>
 
@@ -86,7 +86,7 @@
         <p class="lede">If you'd like to be listed, send your details and we'll walk you through the verification steps. The first listings are free during the pilot.</p>
         <a class="btn" href="#" data-form="providerApply">Apply to be listed</a>
       </div>
-      <div class="split__photo" data-reveal style="--d:120ms"><img src="img/clipboard-800.jpg" srcset="img/clipboard-800.jpg 800w, img/clipboard-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="600" alt="Hands and a clipboard during a session" loading="lazy"></div>
+      <div class="split__photo d2" data-reveal><img src="img/clipboard-800.jpg" srcset="img/clipboard-800.jpg 800w, img/clipboard-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="450" alt="Hands and a clipboard during a session" loading="lazy"></div>
     </div>
   </section>
 </main>
@@ -96,7 +96,7 @@
       <div>
         <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg> Kadua</a>
         <p class="foot__tag">Kasama sa Bawat Hakbang</p>
-        <p class="muted" style="max-width:40ch">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
+        <p class="muted max-40">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
       </div>
       <div>
         <h3>Sections</h3>
@@ -120,7 +120,7 @@
     <div class="foot__base">
       <span>Kadua, <span data-year>2026</span></span>
       <span>Hotlines last checked <span data-last-checked>2026-10-25</span></span>
-      <span>Photos from Unsplash photographers, credited in the <a href="img/CREDITS.md">credits file</a></span>
+      <span>Photos from Unsplash photographers, credited on the <a href="credits.html">credits page</a></span>
     </div>
   </div>
 </footer>

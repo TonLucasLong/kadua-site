@@ -22,7 +22,7 @@
     </ul>
     <div class="nav__right">
       <a class="btn btn--urgent" href="immediate-help.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Need help now</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" ><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="nav-toggle__label">Menu</span></button>
     </div>
   </div>
   <nav class="sheet" id="site-menu" aria-label="Sections">
@@ -41,18 +41,19 @@
       <h1>Self-care, the practical kind</h1>
       <p class="lede">Short guides you can read in five minutes and use today. They cover everyday wellbeing and how to use support well. They are information, not diagnosis or treatment, and they never replace a professional.</p>
     </div>
-    <div class="page-hero__photo" data-reveal style="--d:120ms"><img src="img/journal-tea-1600.jpg" srcset="img/journal-tea-800.jpg 800w, img/journal-tea-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="1600" height="1280" alt="A journal and a teapot in warm light"></div>
+    <div class="page-hero__photo d2" data-reveal><img src="img/journal-tea-1600.jpg" srcset="img/journal-tea-800.jpg 800w, img/journal-tea-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="800" height="533" alt="A journal and a teapot in warm light"></div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <section class="section pt-0">
     <div class="wrap">
+      <h2 class="visually-hidden">Guides</h2>
       <ul class="cards cards--3">
         <li data-reveal><a class="card" href="guides/choosing-a-professional.html"><span class="meta">Choosing · 5 min</span><h3>Psychologist, psychiatrist, or counselor: who do I need?</h3><p>What each one does, who they're for, and how to check a license.</p></a></li>
-        <li data-reveal style="--d:60ms"><a class="card" href="guides/first-session.html"><span class="meta">Starting · 4 min</span><h3>What to expect in a first session</h3><p>How to prepare, what gets asked, and what a good fit feels like.</p></a></li>
-        <li data-reveal style="--d:120ms"><a class="card" href="guides/before-you-call.html"><span class="meta">Hotlines · 4 min</span><h3>Before you call a hotline</h3><p>What the call is like, what to have ready, and what to do if you can't get through.</p></a></li>
-        <li data-reveal style="--d:180ms"><a class="card" href="guides/everyday-self-care.html"><span class="meta">Everyday · 5 min</span><h3>Everyday self-care that costs nothing</h3><p>Sleep, movement, daylight, routine, and people: small moves with evidence behind them.</p></a></li>
-        <li data-reveal style="--d:240ms"><a class="card" href="guides/supporting-someone.html"><span class="meta">For a friend · 5 min</span><h3>How to support someone who's struggling</h3><p>Listening without fixing, asking the hard question, and knowing when to call.</p></a></li>
-        <li data-reveal style="--d:300ms"><div class="card" style="background:var(--color-accent-soft);box-shadow:none"><span class="meta">How these are written</span><h3>Reviewed, dated, plain</h3><p>Each guide is drafted from public health guidance and cited where it makes a factual claim. A qualified mental health adviser reads it before it is marked reviewed; unreviewed guides say so at the top.</p></div></li>
+        <li class="d1" data-reveal><a class="card" href="guides/first-session.html"><span class="meta">Starting · 4 min</span><h3>What to expect in a first session</h3><p>How to prepare, what gets asked, and what a good fit feels like.</p></a></li>
+        <li class="d2" data-reveal><a class="card" href="guides/before-you-call.html"><span class="meta">Hotlines · 4 min</span><h3>Before you call a hotline</h3><p>What the call is like, what to have ready, and what to do if you can't get through.</p></a></li>
+        <li class="d3" data-reveal><a class="card" href="guides/everyday-self-care.html"><span class="meta">Everyday · 5 min</span><h3>Everyday self-care that costs nothing</h3><p>Sleep, movement, daylight, routine, and people: small moves with evidence behind them.</p></a></li>
+        <li class="d4" data-reveal><a class="card" href="guides/supporting-someone.html"><span class="meta">For a friend · 5 min</span><h3>How to support someone who's struggling</h3><p>Listening without fixing, asking the hard question, and knowing when to call.</p></a></li>
+        <li class="d5" data-reveal><div class="card card--note"><span class="meta">How these are written</span><h3>Reviewed, dated, plain</h3><p>Each guide is drafted from public health guidance and cited where it makes a factual claim. A qualified mental health adviser reads it before it is marked reviewed; unreviewed guides say so at the top.</p></div></li>
       </ul>
     </div>
   </section>
@@ -65,7 +66,7 @@
         <p>If you'd buy something like this, two questions will help us decide what to make, and whether to make it at all.</p>
         <a class="btn" href="#" data-form="productInterest">Answer two questions</a>
       </div>
-      <div class="split__photo" data-reveal style="--d:120ms"><img src="img/desk-window-800.jpg" srcset="img/desk-window-800.jpg 800w, img/desk-window-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="600" alt="A study desk with plants beside a bright window" loading="lazy"></div>
+      <div class="split__photo d2" data-reveal><img src="img/desk-window-800.jpg" srcset="img/desk-window-800.jpg 800w, img/desk-window-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="1000" alt="A study desk with plants beside a bright window" loading="lazy"></div>
     </div>
   </section>
 </main>
@@ -75,7 +76,7 @@
       <div>
         <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg> Kadua</a>
         <p class="foot__tag">Kasama sa Bawat Hakbang</p>
-        <p class="muted" style="max-width:40ch">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
+        <p class="muted max-40">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
       </div>
       <div>
         <h3>Sections</h3>
@@ -99,7 +100,7 @@
     <div class="foot__base">
       <span>Kadua, <span data-year>2026</span></span>
       <span>Hotlines last checked <span data-last-checked>2026-10-25</span></span>
-      <span>Photos from Unsplash photographers, credited in the <a href="img/CREDITS.md">credits file</a></span>
+      <span>Photos from Unsplash photographers, credited on the <a href="credits.html">credits page</a></span>
     </div>
   </div>
 </footer>

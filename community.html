@@ -22,7 +22,7 @@
     </ul>
     <div class="nav__right">
       <a class="btn btn--urgent" href="immediate-help.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Need help now</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" ><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="nav-toggle__label">Menu</span></button>
     </div>
   </div>
   <nav class="sheet" id="site-menu" aria-label="Sections">
@@ -41,13 +41,13 @@
       <h1>Community and hobbies</h1>
       <p class="lede">Feeling connected is part of wellbeing, and it's easier to connect around something you enjoy. Kadua curates hobby and interest groups, community organizations, and events, and shows you how to join. Groups are listed only after we've talked to the organizers and agreed on the rules.</p>
     </div>
-    <div class="page-hero__photo" data-reveal style="--d:120ms"><img src="img/music-session-1600.jpg" srcset="img/music-session-800.jpg 800w, img/music-session-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="1600" height="1280" alt="People singing and playing instruments together in a warm room"></div>
+    <div class="page-hero__photo d2" data-reveal><img src="img/music-session-1600.jpg" srcset="img/music-session-800.jpg 800w, img/music-session-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="800" height="534" alt="People singing and playing instruments together in a warm room"></div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <section class="section pt-0">
     <div class="wrap">
       <div class="notice" role="note" data-reveal><strong>Partner listings are being set up.</strong> The categories below show what the community section will hold. Each category gets real groups as partner organizers come on board and agree to the participation rules.</div>
-      <ul class="cards cards--3" id="communities" style="margin-top:var(--space-lg)"></ul>
+      <ul class="cards cards--3" id="communities" class="mt-lg"></ul>
     </div>
   </section>
 
@@ -63,10 +63,10 @@
           <li><strong>Public first.</strong> Meetings happen in public places or on public platforms, and new members are told what to expect before they join.</li>
         </ul>
       </div>
-      <div class="mosaic" data-reveal style="--d:120ms">
-        <div><img src="img/court-dusk-800.jpg" srcset="img/court-dusk-800.jpg 800w, img/court-dusk-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="400" alt="A seaside basketball court at dusk" loading="lazy"></div>
-        <div><img src="img/board-game-800.jpg" width="800" height="800" alt="Hands moving pieces over a board game" loading="lazy"></div>
-        <div><img src="img/chess-pasay-800.jpg" width="800" height="800" alt="Two men playing chess on a street corner in Pasay" loading="lazy"></div>
+      <div class="mosaic d2" data-reveal>
+        <div><img src="img/court-dusk-800.jpg" srcset="img/court-dusk-800.jpg 800w, img/court-dusk-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="1000" alt="A seaside basketball court at dusk" loading="lazy"></div>
+        <div><img src="img/crochet-800.jpg" srcset="img/crochet-800.jpg 800w, img/crochet-1600.jpg 1600w" sizes="(min-width: 56rem) 22vw, 50vw" width="800" height="533" alt="Crocheted squares with a hook and yarn" loading="lazy"></div>
+        <div><img src="img/chess-pasay-800.jpg" srcset="img/chess-pasay-800.jpg 800w, img/chess-pasay-1600.jpg 1600w" sizes="(min-width: 56rem) 22vw, 50vw" width="800" height="533" alt="Two men playing chess on a street corner in Pasay" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -76,9 +76,9 @@
       <div data-reveal>
         <h2>Join, or run a group</h2>
         <p class="lede">Want to hear when groups near you open up? Or do you already run a hobby group, a community organization, a campus club, or a workplace program and want to be listed?</p>
-        <p style="display:flex;flex-wrap:wrap;gap:var(--space-sm)"><a class="btn" href="#" data-form="communityInterest">I'd like to join</a> <a class="btn btn--ghost" href="#" data-form="organizerApply">I run a group</a></p>
+        <p class="row"><a class="btn" href="#" data-form="communityInterest">I'd like to join</a> <a class="btn btn--ghost" href="#" data-form="organizerApply">I run a group</a></p>
       </div>
-      <div class="split__photo" data-reveal style="--d:120ms"><img src="img/runners-800.jpg" srcset="img/runners-800.jpg 800w, img/runners-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="600" alt="Three runners at sunrise" loading="lazy"></div>
+      <div class="split__photo d2" data-reveal><img src="img/board-game-800.jpg" srcset="img/board-game-800.jpg 800w, img/board-game-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="450" alt="Hands moving pieces over a board game" loading="lazy"></div>
     </div>
   </section>
 </main>
@@ -88,7 +88,7 @@
       <div>
         <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg> Kadua</a>
         <p class="foot__tag">Kasama sa Bawat Hakbang</p>
-        <p class="muted" style="max-width:40ch">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
+        <p class="muted max-40">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
       </div>
       <div>
         <h3>Sections</h3>
@@ -112,7 +112,7 @@
     <div class="foot__base">
       <span>Kadua, <span data-year>2026</span></span>
       <span>Hotlines last checked <span data-last-checked>2026-10-25</span></span>
-      <span>Photos from Unsplash photographers, credited in the <a href="img/CREDITS.md">credits file</a></span>
+      <span>Photos from Unsplash photographers, credited on the <a href="credits.html">credits page</a></span>
     </div>
   </div>
 </footer>

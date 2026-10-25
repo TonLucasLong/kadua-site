@@ -22,7 +22,7 @@
     </ul>
     <div class="nav__right">
       <a class="btn btn--urgent" href="immediate-help.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Need help now</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" ><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="nav-toggle__label">Menu</span></button>
     </div>
   </div>
   <nav class="sheet" id="site-menu" aria-label="Sections">
@@ -39,7 +39,7 @@
   <section class="wrap hero">
     <div class="hero__copy" data-reveal>
       <h1>Ano ang kailangan mo ngayon?</h1>
-      <p class="lede">What do you need right now? Find a verified professional, a five-minute guide, a group that meets around something you enjoy, or a line you can call tonight. Kadua means someone who is with you.</p>
+      <p class="lede">What do you need right now? A professional you can check, a five-minute guide, a group that meets around something you enjoy, or a line you can call tonight. Kadua means someone who is with you.</p>
       <form class="finder" action="find-support.html" method="get" aria-label="Find a professional">
         <label>I'm looking for
           <select name="type"><option value="">Any professional</option><option>Psychologist</option><option>Psychiatrist</option><option>Guidance counselor</option><option>Social worker</option><option>Organization</option></select>
@@ -51,16 +51,14 @@
       </form>
       <p class="finder__alt">Not sure who you need? Start with <a href="guides/choosing-a-professional.html">psychologist, psychiatrist, or counselor?</a></p>
     </div>
-    <div class="hero__photo" data-reveal style="--d:120ms">
-      <img src="img/window-quiet-1600.jpg" srcset="img/window-quiet-800.jpg 800w, img/window-quiet-1600.jpg 1600w" sizes="(min-width: 56rem) 40vw, 100vw" width="1600" height="2000" alt="A person sitting by a large window, looking out at the mountains" fetchpriority="high">
+    <div class="hero__photo d2" data-reveal>
+      <img src="img/bench-talk-1600.jpg" srcset="img/bench-talk-800.jpg 800w, img/bench-talk-1600.jpg 1600w" sizes="(min-width: 56rem) 40vw, 100vw" width="800" height="1200" alt="Two people talking on a bench outdoors in warm light" fetchpriority="high">
     </div>
   </section>
 
   <div class="wrap"><div class="trust" data-reveal>
-    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Verified before it's published</span>
-    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free, no account needed</span>
-    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Hotlines checked every 90 days</span>
-    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Plain Filipino and English</span>
+    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free, no account, nothing stored about you</span>
+    <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Hotlines confirmed with their operators and rechecked every 90 days</span>
   </div></div>
 
   <section class="section">
@@ -68,19 +66,19 @@
       <div class="section__head" data-reveal><h2>Four doors. Pick one.</h2><p>Each one leads to a real next step, and Kadua steps back once you're through.</p></div>
       <ul class="doors">
         <li data-reveal><a class="door" href="find-support.html">
-          <div class="door__img"><img src="img/counsel-room-800.jpg" srcset="img/counsel-room-800.jpg 800w, img/counsel-room-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="600" alt="A counselor's room with two chairs in soft sunlight" loading="lazy"></div>
+          <div class="door__img"><img src="img/counsel-room-800.jpg" srcset="img/counsel-room-800.jpg 800w, img/counsel-room-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="536" alt="A counselor's room with two chairs in soft sunlight" loading="lazy"></div>
           <div class="door__body"><h3>Professional Support</h3><span class="door__fil">Propesyonal na tulong</span><p>Psychologists, psychiatrists, counselors, and organizations you can filter by type, mode, area, and fee. Every listing is verified before it appears.</p><span class="door__cta">Search the directory</span></div>
         </a></li>
-        <li data-reveal style="--d:80ms"><a class="door" href="self-care.html">
-          <div class="door__img"><img src="img/journal-tea-800.jpg" srcset="img/journal-tea-800.jpg 800w, img/journal-tea-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="600" alt="A journal and a teapot in warm light" loading="lazy"></div>
+        <li class="d1" data-reveal><a class="door" href="self-care.html">
+          <div class="door__img"><img src="img/journal-tea-800.jpg" srcset="img/journal-tea-800.jpg 800w, img/journal-tea-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="533" alt="A journal and a teapot in warm light" loading="lazy"></div>
           <div class="door__body"><h3>Self-Care</h3><span class="door__fil">Pag-aalaga sa sarili</span><p>Short, reviewed guides on everyday wellbeing and on using support well. Information, not treatment.</p><span class="door__cta">Read the guides</span></div>
         </a></li>
-        <li data-reveal style="--d:160ms"><a class="door" href="community.html">
-          <div class="door__img"><img src="img/court-dusk-800.jpg" srcset="img/court-dusk-800.jpg 800w, img/court-dusk-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="600" alt="A seaside basketball court at dusk" loading="lazy"></div>
+        <li class="d3" data-reveal><a class="door" href="community.html">
+          <div class="door__img"><img src="img/court-dusk-800.jpg" srcset="img/court-dusk-800.jpg 800w, img/court-dusk-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="1000" alt="A seaside basketball court at dusk" loading="lazy"></div>
           <div class="door__body"><h3>Community &amp; Hobbies</h3><span class="door__fil">Komunidad at libangan</span><p>Curated groups that meet around something you enjoy, with clear rules and a way to report anything.</p><span class="door__cta">Find a group</span></div>
         </a></li>
-        <li data-reveal style="--d:240ms"><a class="door door--urgent" href="immediate-help.html">
-          <div class="door__img"><img src="img/phone-hands-800.jpg" srcset="img/phone-hands-800.jpg 800w, img/phone-hands-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="600" alt="Hands holding a phone in warm light" loading="lazy"></div>
+        <li class="d4" data-reveal><a class="door door--urgent" href="immediate-help.html">
+          <div class="door__img"><img src="img/phone-hands-800.jpg" srcset="img/phone-hands-800.jpg 800w, img/phone-hands-1600.jpg 1600w" sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 50vw, 100vw" width="800" height="800" alt="Hands holding a phone in warm light" loading="lazy"></div>
           <div class="door__body"><h3>Immediate Help</h3><span class="door__fil">Agarang tulong</span><p>Confirmed crisis and emergency lines, with a plain explanation of what happens when you call.</p><span class="door__cta">See the numbers</span></div>
         </a></li>
       </ul>
@@ -92,8 +90,8 @@
       <div class="section__head" data-reveal><h2>How it works</h2><p>Three steps, one visit. No account, no forms, no waiting room.</p></div>
       <ol class="steps">
         <li data-reveal><b>Choose a door</b><p>Professional support, self-care, community, or immediate help. The home page is this choice.</p></li>
-        <li data-reveal style="--d:80ms"><b>Explore verified options</b><p>A short list with the basics you need: what it is, how it works, roughly what it costs, and when it was last checked.</p></li>
-        <li data-reveal style="--d:160ms"><b>Connect</b><p>Follow through to the provider, guide, group, or hotline. Your relationship is with them. Kadua steps back here.</p></li>
+        <li class="d1" data-reveal><b>Explore verified options</b><p>A short list with the basics you need: what it is, how it works, roughly what it costs, and when it was last checked.</p></li>
+        <li class="d3" data-reveal><b>Connect</b><p>Follow through to the provider, guide, group, or hotline. Your relationship is with them. Kadua steps back here.</p></li>
       </ol>
     </div>
   </section>
@@ -103,10 +101,10 @@
       <div class="section__head" data-reveal><h2>Guides you can read in five minutes</h2><p>Plain language, drafted from public health guidance, reviewed before they're marked done.</p></div>
       <ul class="cards cards--3">
         <li data-reveal><a class="card" href="guides/choosing-a-professional.html"><span class="meta">Choosing</span><h3>Psychologist, psychiatrist, or counselor: who do I need?</h3><p>What each one does in the Philippines, and how to check a license.</p></a></li>
-        <li data-reveal style="--d:80ms"><a class="card" href="guides/before-you-call.html"><span class="meta">Hotlines</span><h3>Before you call a hotline</h3><p>What the call is like, what to have ready, and what to do if you can't get through.</p></a></li>
-        <li data-reveal style="--d:160ms"><a class="card" href="guides/supporting-someone.html"><span class="meta">For a friend</span><h3>How to support someone who's struggling</h3><p>Listening without fixing, asking the hard question, knowing when to call.</p></a></li>
+        <li class="d1" data-reveal><a class="card" href="guides/before-you-call.html"><span class="meta">Hotlines</span><h3>Before you call a hotline</h3><p>What the call is like, what to have ready, and what to do if you can't get through.</p></a></li>
+        <li class="d3" data-reveal><a class="card" href="guides/supporting-someone.html"><span class="meta">For a friend</span><h3>How to support someone who's struggling</h3><p>Listening without fixing, asking the hard question, knowing when to call.</p></a></li>
       </ul>
-      <p style="margin-top:var(--space-lg)"><a class="btn btn--ghost" href="self-care.html">All five guides</a></p>
+      <p class="mt-lg"><a class="btn btn--ghost" href="self-care.html">All five guides</a></p>
     </div>
   </section>
 
@@ -118,10 +116,10 @@
         <ul class="checks"><li>Organizers we've spoken with</li><li>Public places or public platforms</li><li>A report link on every listing</li><li>Crisis routing to Immediate Help</li></ul>
         <a class="btn btn--ghost" href="community.html">See the categories</a>
       </div>
-      <div class="mosaic" data-reveal style="--d:120ms">
-        <div><img src="img/chess-pasay-800.jpg" srcset="img/chess-pasay-800.jpg 800w, img/chess-pasay-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="400" alt="Two men playing chess on a street corner in Pasay" loading="lazy"></div>
-        <div><img src="img/crochet-800.jpg" width="800" height="800" alt="Crocheted squares with a hook and yarn" loading="lazy"></div>
-        <div><img src="img/runners-800.jpg" width="800" height="800" alt="Three runners at sunrise" loading="lazy"></div>
+      <div class="mosaic d2" data-reveal>
+        <div><img src="img/chess-pasay-800.jpg" srcset="img/chess-pasay-800.jpg 800w, img/chess-pasay-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="533" alt="Two men playing chess on a street corner in Pasay" loading="lazy"></div>
+        <div><img src="img/crochet-800.jpg" srcset="img/crochet-800.jpg 800w, img/crochet-1600.jpg 1600w" sizes="(min-width: 56rem) 22vw, 50vw" width="800" height="533" alt="Crocheted squares with a hook and yarn" loading="lazy"></div>
+        <div><img src="img/music-session-800.jpg" srcset="img/music-session-800.jpg 800w, img/music-session-1600.jpg 1600w" sizes="(min-width: 56rem) 22vw, 50vw" width="800" height="534" alt="People singing and playing instruments together" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -134,7 +132,7 @@
         <p>Kadua puts the starting points in one place and says plainly what each one is for. It is <strong>not</strong> a clinic, a hotline, or a substitute for qualified care. Think of it as the friend who knows where to look.</p>
         <a href="about.html">More about how Kadua works</a>
       </div>
-      <div class="split__photo" data-reveal style="--d:120ms"><img src="img/desk-window-800.jpg" srcset="img/desk-window-800.jpg 800w, img/desk-window-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="600" alt="A study desk with plants beside a bright window" loading="lazy"></div>
+      <div class="split__photo d2" data-reveal><img src="img/desk-window-800.jpg" srcset="img/desk-window-800.jpg 800w, img/desk-window-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="1000" alt="A study desk with plants beside a bright window" loading="lazy"></div>
     </div>
   </section>
 
@@ -148,9 +146,9 @@
           <a class="tel" href="tel:+639190571553">0919-057-1553 <small>NCMH mobile</small></a>
           <a class="tel" href="tel:911">911 <small>emergency</small></a>
         </div>
-        <p class="checked" style="margin-top:var(--space-md)">Open 24 hours a day. Numbers last checked <span data-last-checked>2026-10-25</span>. <a href="immediate-help.html">All confirmed lines and what to expect</a>.</p>
+        <p class="checked mt-md">Open 24 hours a day. Numbers last checked <span data-last-checked>2026-10-25</span>. <a href="immediate-help.html">All confirmed lines and what to expect</a>.</p>
       </div>
-      <div class="split__photo" data-reveal style="--d:120ms"><img src="img/bench-talk-800.jpg" srcset="img/bench-talk-800.jpg 800w, img/bench-talk-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="800" height="600" alt="Two people talking on a bench outdoors" loading="lazy"></div>
+      <div class="split__photo d2 pos-right" data-reveal><img src="img/window-quiet-800.jpg" srcset="img/window-quiet-800.jpg 800w, img/window-quiet-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="800" height="533" alt="A person sitting by a large window" loading="lazy"></div>
     </div>
   </section>
 
@@ -159,9 +157,9 @@
       <div class="section__head" data-reveal><h2>Common questions</h2></div>
       <div class="faq" data-reveal>
         <details><summary>Does Kadua cost anything?</summary><p>No. Searching the directory, reading the guides, and using the Immediate Help page are free, and there is no account. Professionals and partner institutions pay for listings and sessions, which is what keeps the site free for you.</p></details>
-        <details><summary>Are the professionals real and licensed?</summary><p>Every listing goes through a license check with the Professional Regulation Commission, a contact check, and a review by a licensed adviser, and it carries the date it was last checked. Right now the directory shows sample entries while the first real listings clear that process.</p></details>
+        <details><summary>Are the professionals real and licensed?</summary><p>Every listing will go through a license check with the Professional Regulation Commission, a contact check, and a spot-check by a licensed adviser, and will carry the date it was last checked. Right now the directory shows clearly labelled sample entries while the first real listings clear that process.</p></details>
         <details><summary>Is this therapy or counseling?</summary><p>No. Kadua lists and refers. Nothing here diagnoses you or treats you. The guides are information, and the professionals you reach through the directory are the ones who provide care.</p></details>
-        <details><summary>What do you do with my information?</summary><p>Nothing, because we don't collect it. The site has no accounts and stores nothing about you. If you fill in a form, we keep only what it asks for, for the purpose it states, and delete it when you ask. <a href="about.html#privacy">Read the privacy note</a>.</p></details>
+        <details><summary>What do you do with my information?</summary><p>The site itself has no accounts and stores nothing about you. The only information Kadua holds comes through its forms, which run under a privacy notice and consent; we keep only what a form asks for, for the purpose it states, and delete it when you ask. <a href="about.html#privacy">Read the privacy note</a>.</p></details>
       </div>
     </div>
   </section>
@@ -172,7 +170,7 @@
       <div>
         <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg> Kadua</a>
         <p class="foot__tag">Kasama sa Bawat Hakbang</p>
-        <p class="muted" style="max-width:40ch">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
+        <p class="muted max-40">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
       </div>
       <div>
         <h3>Sections</h3>
@@ -196,7 +194,7 @@
     <div class="foot__base">
       <span>Kadua, <span data-year>2026</span></span>
       <span>Hotlines last checked <span data-last-checked>2026-10-25</span></span>
-      <span>Photos from Unsplash photographers, credited in the <a href="img/CREDITS.md">credits file</a></span>
+      <span>Photos from Unsplash photographers, credited on the <a href="credits.html">credits page</a></span>
     </div>
   </div>
 </footer>

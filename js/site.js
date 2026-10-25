@@ -9,12 +9,9 @@
   document.querySelectorAll("[data-form]").forEach(function (el) {
     var key = el.getAttribute("data-form"), url = cfg.forms && cfg.forms[key];
     if (url) { el.href = url; el.target = "_blank"; el.rel = "noopener"; return; }
-    var span = document.createElement("span");
-    if (el.classList.contains("btn")) {
-      span.className = el.className; span.setAttribute("aria-disabled", "true"); span.textContent = el.textContent;
-      var note = document.createElement("span"); note.className = "btn-note"; note.textContent = "This form opens here once it is connected.";
-      el.replaceWith(span); span.insertAdjacentElement("afterend", note);
-    } else { span.className = "muted"; span.textContent = el.textContent + " (form not yet connected)"; el.replaceWith(span); }
+    var p = document.createElement("p"); p.className = el.classList.contains("btn") ? "form-note" : "muted";
+    var copy = { feedback: "Reports open with the pilot launch.", providerApply: "Listing applications open with the pilot launch. Check back here.", productInterest: "The two-question product survey opens with the pilot launch.", communityInterest: "Group announcements open with the pilot launch.", organizerApply: "Organizer applications open with the pilot launch." };
+    p.textContent = copy[key] || "This opens with the pilot launch."; el.replaceWith(p);
   });
   // Directory
   var list = document.getElementById("directory");
@@ -32,6 +29,7 @@
         list.appendChild(li);
       });
       empty.hidden = rows.length > 0;
+      if (rows.length === 0) { empty.innerHTML = "No sample listing matches those filters yet. <a href=\"find-support.html\">Clear the filters</a> or try Online only."; }
       if (count) count.textContent = rows.length + (rows.length === 1 ? " listing shown" : " listings shown") + (params.toString() ? " for your search" : "");
     }
     form.addEventListener("change", render); render();
