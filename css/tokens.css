@@ -1,0 +1,63 @@
+/* Hallmark · genre: editorial · macrostructure: Index-First · theme: Garden · enrichment: none · nav: N9 · footer: Ft6 (+ C4 sticky help bar on phones)
+ * tone: soft, quiet · anchor hue: leaf green (150) · urgent hue reserved for Immediate Help only
+ * audience: Filipino students, working adults, caregivers (study §IV.A.4) · use: choose a need, reach the next step (study §VII user journey)
+ * pre-emit critique: P4 H4 E4 S4 R5 V4
+ */
+
+:root {
+  /* paper band: light · display: roman high-contrast serif · accent: chromatic-other (leaf green) */
+  --color-paper:        oklch(97.5% 0.012 95);
+  --color-paper-2:      oklch(94.8% 0.018 100);
+  --color-ink:          oklch(24% 0.025 150);
+  --color-ink-2:        oklch(44% 0.02 150);
+  --color-rule:         oklch(86% 0.02 110);
+  --color-accent:       oklch(46% 0.11 150);
+  --color-accent-ink:   oklch(34% 0.09 150);
+  --color-accent-soft:  oklch(93% 0.035 150);
+  --color-urgent:       oklch(48% 0.18 28);
+  --color-urgent-ink:   oklch(38% 0.16 28);
+  --color-urgent-soft:  oklch(95.5% 0.025 28);
+  --color-focus:        oklch(52% 0.16 250);
+  --color-on-accent:    oklch(98% 0.01 95);
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body:    "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --text-xs:   0.8rem;
+  --text-sm:   0.9rem;
+  --text-base: 1rem;
+  --text-md:   1.25rem;
+  --text-lg:   1.5625rem;
+  --text-xl:   1.9531rem;
+  --text-2xl:  2.4414rem;
+  --text-3xl:  3.0518rem;
+  --text-display: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  --page-gutter: clamp(1rem, 4vw, 3rem);
+  --measure: 62ch;
+  --max-width: 72rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --rule: 1px solid var(--color-rule);
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  --z-sticky: 10;
+  --z-skip: 20;
+}
