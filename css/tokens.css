@@ -1,63 +1,45 @@
-/* Hallmark · genre: editorial · macrostructure: Index-First · theme: Garden · enrichment: none · nav: N9 · footer: Ft6 (+ C4 sticky help bar on phones)
- * tone: soft, quiet · anchor hue: leaf green (150) · urgent hue reserved for Immediate Help only
- * audience: Filipino students, working adults, caregivers (study §IV.A.4) · use: choose a need, reach the next step (study §VII user journey)
- * pre-emit critique: P4 H4 E4 S4 R5 V4
- */
-
+/* Hallmark · genre: editorial (warm, photo-led) · macrostructure: Marquee Hero with finder module · theme: custom (vibe: "calm premium companion, warm paper, deep green, one clay for crisis") · paper oklch(96.8% 0.012 85) · accent oklch(37% 0.07 165) deep green · nav: N1b (wordmark, four links, one urgent control) · footer: Ft1 mast-headed
+ * axes: light paper / roman serif display (Newsreader) / chromatic-other (green) · differs from v1 (Index-First, Garden/Fraunces) on macrostructure, nav, footer, display face
+ * pre-emit critique: P4 H5 E4 S4 R4 V4 */
 :root {
-  /* paper band: light · display: roman high-contrast serif · accent: chromatic-other (leaf green) */
-  --color-paper:        oklch(97.5% 0.012 95);
-  --color-paper-2:      oklch(94.8% 0.018 100);
-  --color-ink:          oklch(24% 0.025 150);
-  --color-ink-2:        oklch(44% 0.02 150);
-  --color-rule:         oklch(86% 0.02 110);
-  --color-accent:       oklch(46% 0.11 150);
-  --color-accent-ink:   oklch(34% 0.09 150);
-  --color-accent-soft:  oklch(93% 0.035 150);
-  --color-urgent:       oklch(48% 0.18 28);
-  --color-urgent-ink:   oklch(38% 0.16 28);
-  --color-urgent-soft:  oklch(95.5% 0.025 28);
-  --color-focus:        oklch(52% 0.16 250);
-  --color-on-accent:    oklch(98% 0.01 95);
+  --color-paper:        #f7f5ef;
+  --color-paper-2:      #efece3;
+  --color-paper-3:      #e6e2d6;
+  --color-ink:          #2e2a28;
+  --color-ink-2:        #6b645f;
+  --color-rule:         #ddd8cc;
+  --color-accent:       #1f4a3d;
+  --color-accent-ink:   #163629;
+  --color-accent-soft:  #e4ece6;
+  --color-accent-mid:   #3d6b5a;
+  --color-urgent:       #b05a3a;
+  --color-urgent-ink:   #8f4228;
+  --color-urgent-soft:  #f6e8e1;
+  --color-on-accent:    #f7f5ef;
+  --color-focus:        #2f6fb5;
+  --shadow-card:        0 10px 30px -18px rgba(46, 42, 40, 0.35);
+  --shadow-card-hover:  0 18px 40px -20px rgba(46, 42, 40, 0.45);
 
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
-  --font-body:    "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-body:    "Figtree", ui-sans-serif, system-ui, sans-serif;
 
-  --text-xs:   0.8rem;
-  --text-sm:   0.9rem;
-  --text-base: 1rem;
+  --text-xs:   0.8125rem;
+  --text-sm:   0.9375rem;
+  --text-base: 1.0625rem;
   --text-md:   1.25rem;
-  --text-lg:   1.5625rem;
-  --text-xl:   1.9531rem;
-  --text-2xl:  2.4414rem;
-  --text-3xl:  3.0518rem;
-  --text-display: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+  --text-lg:   1.5rem;
+  --text-xl:   1.875rem;
+  --text-2xl:  2.375rem;
+  --text-display: clamp(2.5rem, 4.6vw + 1rem, 4.5rem);
 
-  --space-2xs: 0.25rem;
-  --space-xs:  0.5rem;
-  --space-sm:  0.75rem;
-  --space-md:  1rem;
-  --space-lg:  1.5rem;
-  --space-xl:  2rem;
-  --space-2xl: 3rem;
-  --space-3xl: 4.5rem;
-  --space-4xl: 6rem;
-
+  --space-2xs: 0.25rem; --space-xs: 0.5rem; --space-sm: 0.75rem; --space-md: 1rem; --space-lg: 1.5rem; --space-xl: 2rem; --space-2xl: 3rem; --space-3xl: 4.5rem; --space-4xl: 6.5rem;
   --page-gutter: clamp(1rem, 4vw, 3rem);
-  --measure: 62ch;
-  --max-width: 72rem;
-
-  --radius-sm: 4px;
-  --radius-md: 8px;
+  --max-width: 76rem;
+  --measure: 60ch;
+  --radius: 1.5rem; --radius-sm: 0.75rem; --radius-pill: 999px;
   --rule: 1px solid var(--color-rule);
 
-  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --dur-micro: 120ms;
-  --dur-short: 220ms;
-  --dur-long:  420ms;
-
-  --z-sticky: 10;
-  --z-skip: 20;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 320ms;
+  --z-header: 20; --z-sheet: 30; --z-skip: 40;
 }

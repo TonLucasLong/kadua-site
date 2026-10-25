@@ -31,9 +31,10 @@ Immediate Help hub. No accounts, no database, no personal data stored.
 
 ## Design
 
-Tokens live in `css/tokens.css` (OKLCH colours, Fraunces and IBM Plex Sans, 4 pt spacing).
-The leaf-green accent is the brand; the red tokens are reserved for Immediate Help only.
-Mobile-first, works at 320 px and up, honours reduced-motion.
+Tokens live in `css/tokens.css` (warm paper, deep green accent, one clay reserved for the crisis control;
+Newsreader and Figtree, self-hosted in `fonts/`). Photos are licensed Unsplash images, self-hosted in `img/`
+at two widths and credited in `img/CREDITS.md`. Motion is one fade-up per element on first view and small hover
+lifts (`js/motion.js`), all off under reduced-motion. Mobile-first, works at 320 px and up.
 
 ## Run locally
 

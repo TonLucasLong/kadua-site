@@ -3,98 +3,135 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Find Professional Support · Kadua</title>
-<meta name="description" content="Search a directory of psychologists, psychiatrists, and counselors in Metro Manila by type, mode, area, and fee range. Listings are verified before they appear.">
+<title>Find professional support in Metro Manila · Kadua</title>
+<meta name="description" content="Search psychologists, psychiatrists, counselors, and organizations by type, mode, area, and fee range. Every listing is verified before it appears.">
 <link rel="stylesheet" href="css/site.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f7f5ef">
 </head>
 <body class="has-sticky ">
 <a class="skip" href="#main">Skip to content</a>
-<div class="page">
-<header class="nav-edge">
-  <a class="wordmark" href="index.html" aria-label="Kadua home">
-    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg>
-    Kadua <span class="tag">Kasama sa Bawat Hakbang</span>
-  </a>
-  <a class="btn btn--urgent" href="immediate-help.html">Immediate Help</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="wordmark" href="index.html" aria-label="Kadua home"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg> Kadua</a>
+    <ul class="nav__links">
+      <li><a href="find-support.html" aria-current="page">Find support</a></li>
+      <li><a href="self-care.html">Self-care</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav__right">
+      <a class="btn btn--urgent" href="immediate-help.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Need help now</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav class="sheet" id="site-menu" aria-label="Sections">
+    <div class="wrap"><ul>
+      <li><a href="find-support.html">Find support</a></li>
+      <li><a href="self-care.html">Self-care</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="immediate-help.html">Immediate help</a></li>
+      <li><a href="about.html">About Kadua</a></li>
+    </ul></div>
+  </nav>
 </header>
-<nav class="strip" aria-label="Sections">
-  <a href="find-support.html" aria-current="page">Professional Support</a>
-  <a href="self-care.html">Self-Care</a>
-  <a href="community.html">Community &amp; Hobbies</a>
-  <a href="immediate-help.html">Immediate Help</a>
-  <a href="about.html">About Kadua</a>
-</nav>
 <main id="main">
-  <section class="intro">
-    <h1>Find professional support</h1>
-    <p class="lede">Psychologists, psychiatrists, guidance counselors, and organizations, with the basics you need to choose: what they do, how they meet, where, and roughly what it costs. Not sure who to look for? Start with <a href="guides/choosing-a-professional.html">Psychologist, psychiatrist, or counselor: who do I need?</a></p>
+  <section class="wrap page-hero">
+    <div data-reveal>
+      <h1>Find professional support</h1>
+      <p class="lede">Psychologists, psychiatrists, guidance counselors, and organizations, with the basics you need to choose: what they do, how they meet, where, and roughly what it costs. Not sure who to look for? Start with <a href="guides/choosing-a-professional.html">who do I need?</a></p>
+    </div>
+    <div class="page-hero__photo" data-reveal style="--d:120ms"><img src="img/counsel-room-1600.jpg" srcset="img/counsel-room-800.jpg 800w, img/counsel-room-1600.jpg 1600w" sizes="(min-width: 56rem) 35vw, 100vw" width="1600" height="1280" alt="A counselor's room with two chairs and striped sunlight"></div>
   </section>
 
-  <div class="notice" role="note">
-    <strong>Sample listings.</strong> The entries below show how the directory works. They are not real providers. Real listings appear only after Kadua's verification process (described below) confirms the license and contact details. Until then, the NCMH Crisis Hotline and the organizations on the <a href="immediate-help.html">Immediate Help</a> page are the confirmed routes.
-  </div>
-
-  <form class="filters" id="filters" aria-label="Filter listings" onsubmit="return false">
-    <label>Type
-      <select name="type"><option value="">Any</option><option>Psychologist</option><option>Psychiatrist</option><option>Guidance counselor</option><option>Social worker</option><option>Organization</option></select>
-    </label>
-    <label>Mode
-      <select name="mode"><option value="">Any</option><option>Online</option><option>In person</option><option>Online or in person</option></select>
-    </label>
-    <label>Area
-      <select name="area"><option value="">Any</option><option>Quezon City</option><option>Manila</option><option>Makati</option><option>Pasig</option><option>Taguig</option><option>Mandaluyong</option><option>Online only</option></select>
-    </label>
-    <label>Fee range
-      <select name="fee"><option value="">Any</option><option>Free or sliding scale</option><option>Low fee</option><option>Standard fee</option><option>Not stated</option></select>
-    </label>
-  </form>
-
-  <p class="muted" id="directory-count" aria-live="polite"></p>
-  <ul class="list" id="directory"></ul>
-  <p class="empty" id="directory-empty" hidden>No sample listing matches those filters. Clear one and try again.</p>
-
-  <section class="section two" id="verify">
-    <div><h2>How listings are verified</h2></div>
-    <div>
-      <ol class="steps">
-        <li><div><b>Application</b> A professional or organization submits their details and license number.</div></li>
-        <li><div><b>License check</b> Kadua checks the license against the Professional Regulation Commission's public verification, or the organization's registration.</div></li>
-        <li><div><b>Contact check</b> We confirm the phone, email, or booking link actually reaches them, and that the fee information is current.</div></li>
-        <li><div><b>Review by a qualified adviser</b> A licensed adviser reviews the listing before it goes live.</div></li>
-        <li><div><b>Re-verification</b> Every listing is rechecked on a schedule and carries its last-checked date. Listings that fail a recheck come down until fixed.</div></li>
-      </ol>
-      <p class="muted">Kadua lists; it does not endorse or supervise care. Your relationship is with the professional you choose.</p>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="notice" role="note" data-reveal><strong>Sample listings.</strong> The entries below show how the directory works. They are not real providers. Real listings appear only after Kadua's verification process confirms the license and contact details. Until then, the lines on the <a href="immediate-help.html">Immediate Help</a> page are the confirmed routes.</div>
+      <form class="filters" id="filters" aria-label="Filter listings" onsubmit="return false">
+        <label>Type
+          <select name="type"><option value="">Any</option><option>Psychologist</option><option>Psychiatrist</option><option>Guidance counselor</option><option>Social worker</option><option>Organization</option></select>
+        </label>
+        <label>Mode
+          <select name="mode"><option value="">Any</option><option>Online</option><option>In person</option><option>Online or in person</option></select>
+        </label>
+        <label>Area
+          <select name="area"><option value="">Any</option><option>Quezon City</option><option>Manila</option><option>Makati</option><option>Pasig</option><option>Taguig</option><option>Mandaluyong</option><option>Online only</option></select>
+        </label>
+        <label>Fee range
+          <select name="fee"><option value="">Any</option><option>Free or sliding scale</option><option>Low fee</option><option>Standard fee</option><option>Not stated</option></select>
+        </label>
+      </form>
+      <p class="muted" id="directory-count" aria-live="polite"></p>
+      <ul class="cards" id="directory"></ul>
+      <p class="empty" id="directory-empty" hidden>No sample listing matches those filters. Clear one and try again.</p>
     </div>
   </section>
 
-  <section class="section two">
-    <div><h2>Are you a licensed professional?</h2></div>
-    <div>
-      <p>If you'd like to be listed, send your details and we'll walk you through the verification steps.</p>
-      <p><a class="btn" href="#" data-form="providerApply">Apply to be listed</a></p>
+  <section class="section section--tint" id="verify">
+    <div class="wrap">
+      <div class="section__head" data-reveal><h2>How listings are verified</h2><p>Five steps before a name appears, and a recheck on a schedule after.</p></div>
+      <ol class="steps">
+        <li data-reveal><b>Application</b><p>A professional or organization submits their details and license number.</p></li>
+        <li data-reveal style="--d:80ms"><b>License and contact check</b><p>The license is checked on the Professional Regulation Commission's online verification; the phone, email, or booking link is confirmed to reach them; fees are confirmed current.</p></li>
+        <li data-reveal style="--d:160ms"><b>Adviser review and recheck</b><p>A licensed adviser reviews the listing before it goes live. Every listing is rechecked on a schedule and carries its last-checked date; one that fails comes down until fixed.</p></li>
+      </ol>
+      <p class="muted" style="margin-top:var(--space-lg)">Kadua lists; it does not endorse or supervise care. Your relationship is with the professional you choose.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div data-reveal>
+        <h2>Are you a licensed professional?</h2>
+        <p class="lede">If you'd like to be listed, send your details and we'll walk you through the verification steps. The first listings are free during the pilot.</p>
+        <a class="btn" href="#" data-form="providerApply">Apply to be listed</a>
+      </div>
+      <div class="split__photo" data-reveal style="--d:120ms"><img src="img/clipboard-800.jpg" srcset="img/clipboard-800.jpg 800w, img/clipboard-1600.jpg 1600w" sizes="(min-width: 56rem) 45vw, 100vw" width="800" height="600" alt="Hands and a clipboard during a session" loading="lazy"></div>
     </div>
   </section>
 </main>
-<footer class="foot-letter">
-  <p class="foot-letter__close">Kasama ka.<br>Hindi mo kailangang gawin ito mag-isa.</p>
-  <p class="foot-letter__ps">P.S. Saw something wrong or missing? <a href="#" data-form="feedback">Tell us</a>. Every note helps us fix the next step for someone else.</p>
-  <p class="foot-letter__ps">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
-  <div class="foot-letter__links">
-    <a href="about.html">About Kadua</a>
-    <a href="about.html#privacy">Privacy</a>
-    <a href="about.html#limits">What Kadua is not</a>
-    <span class="muted">Kadua, <span data-year>2026</span></span>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="12" cy="19" r="9" fill="var(--color-accent)"/><circle cx="21" cy="13" r="9" fill="none" stroke="var(--color-ink)" stroke-width="2.5"/></svg> Kadua</a>
+        <p class="foot__tag">Kasama sa Bawat Hakbang</p>
+        <p class="muted" style="max-width:40ch">Kadua is a connection point, not a clinic or an emergency service. If someone is in danger right now, call <a href="tel:911">911</a>.</p>
+      </div>
+      <div>
+        <h3>Sections</h3>
+        <ul>
+          <li><a href="find-support.html">Find support</a></li>
+          <li><a href="self-care.html">Self-care guides</a></li>
+          <li><a href="community.html">Community and hobbies</a></li>
+          <li><a href="immediate-help.html">Immediate help</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kadua</h3>
+        <ul>
+          <li><a href="about.html">About Kadua</a></li>
+          <li><a href="about.html#privacy">Your information</a></li>
+          <li><a href="about.html#limits">What Kadua is not</a></li>
+          <li><a href="#" data-form="feedback">Report a wrong number or link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>Kadua, <span data-year>2026</span></span>
+      <span>Hotlines last checked <span data-last-checked>2026-10-25</span></span>
+      <span>Photos from Unsplash photographers, credited in the <a href="img/CREDITS.md">credits file</a></span>
+    </div>
   </div>
 </footer>
-</div>
 <aside class="cta-sticky" aria-label="Immediate help">
   <span>Kailangan mo ba ng tulong ngayon?</span>
-  <a class="btn btn--urgent" href="immediate-help.html">Immediate Help</a>
+  <a class="btn btn--urgent" href="immediate-help.html"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> Need help now</a>
 </aside>
 <script src="js/config.js"></script>
 <script src="data/providers.js"></script>
 <script src="data/communities.js"></script>
 <script src="js/site.js"></script>
+<script src="js/motion.js"></script>
 </body>
 </html>
