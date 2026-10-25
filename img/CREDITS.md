@@ -6,7 +6,6 @@ All photographs are from Unsplash under the Unsplash License (free to use, attri
 - `journal-tea`: Journal and teapot in warm light. Photo by Kelly Sikkema on Unsplash (https://unsplash.com/photos/photo-1728931710220-45fa008628a9).
 - `chess-pasay`: Two men playing chess on a street corner, Pasay. Photo by Yanni Panesa on Unsplash (https://unsplash.com/photos/photo-1488417607860-c37d00aebe62).
 - `court-dusk`: Seaside basketball court at dusk, Palawan. Photo by Juan Carlos Bayocot on Unsplash (https://unsplash.com/photos/photo-1659367527460-92759bf33263).
-- `runners`: Three runners at sunrise. Photo by Fitsum Admasu on Unsplash (https://unsplash.com/photos/photo-1552674605-db6ffd4facb5).
 - `crochet`: Crocheted squares with hook and yarn. Photo by Nicole Almendrada on Unsplash (https://unsplash.com/photos/photo-1777537953560-10fda7d9965a).
 - `board-game`: Hands over a board game. Photo by 2H Media on Unsplash (https://unsplash.com/photos/photo-1676651471150-0e3a5f8de05e).
 - `phone-hands`: Hands holding a phone in warm light. Photo by Mason Supply on Unsplash (https://unsplash.com/photos/photo-1705037282052-f6b776980f8d).
