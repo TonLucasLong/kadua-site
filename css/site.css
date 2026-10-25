@@ -66,7 +66,7 @@ strong { font-weight: 600; }
 .hero__copy .lede { margin-bottom: var(--space-lg); }
 .hero__photo { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4 / 5; box-shadow: var(--shadow-card); }
 @media (min-width: 40rem) and (max-width: 55.99rem) { .hero__photo { aspect-ratio: 16 / 9; } }
-.hero__photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
 @media (min-width: 56rem) { .hero { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); padding-block: var(--space-3xl) var(--space-4xl); } }
 .finder { display: grid; gap: var(--space-sm); grid-template-columns: minmax(0,1fr); background: var(--color-surface); border: var(--rule); border-radius: var(--radius); padding: var(--space-md); box-shadow: var(--shadow-card); max-width: 42rem; }
 .finder label { display: grid; gap: var(--space-2xs); font-size: var(--text-xs); color: var(--color-ink-2); font-weight: 600; }
