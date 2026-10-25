@@ -102,6 +102,7 @@ strong { font-weight: 600; }
 .door__body p { color: var(--color-ink-2); font-size: var(--text-sm); margin: 0; flex: 1; }
 .door__cta { font-weight: 600; font-size: var(--text-sm); color: var(--color-accent-ink); margin-top: var(--space-sm); }
 .door--urgent .door__cta { color: var(--color-urgent-ink); }
+.door--urgent { border-top: 4px solid var(--color-urgent); }
 
 /* Steps */
 .steps { display: grid; gap: var(--space-lg); grid-template-columns: minmax(0,1fr); list-style: none; padding: 0; margin: 0; counter-reset: s; }
@@ -207,7 +208,7 @@ th { font-weight: 600; color: var(--color-ink-2); }
 .foot h3 { font-family: var(--font-body); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--color-ink-2); margin-bottom: var(--space-sm); font-weight: 600; }
 .foot ul { list-style: none; padding: 0; margin: 0; }
 .foot li { margin-bottom: var(--space-xs); }
-.foot a { text-decoration: none; color: var(--color-ink); display: inline-block; padding-block: 0.45rem; }
+.foot a { text-decoration: none; color: var(--color-ink); display: inline-block; padding-block: 0.55rem; }
 .foot a:hover { text-decoration: underline; }
 .foot__base { margin-top: var(--space-xl); padding-top: var(--space-md); border-top: var(--rule); font-size: var(--text-sm); color: var(--color-ink-2); display: flex; flex-wrap: wrap; gap: var(--space-sm) var(--space-lg); }
 
