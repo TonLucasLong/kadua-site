@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Find Professional Support · Kadua</title>
 <meta name="description" content="Search a directory of psychologists, psychiatrists, and counselors in Metro Manila by type, mode, area, and fee range. Listings are verified before they appear.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/site.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
@@ -53,7 +50,8 @@
     </label>
   </form>
 
-  <ul class="list" id="directory" aria-live="polite"></ul>
+  <p class="muted" id="directory-count" aria-live="polite"></p>
+  <ul class="list" id="directory"></ul>
   <p class="empty" id="directory-empty" hidden>No sample listing matches those filters. Clear one and try again.</p>
 
   <section class="section two" id="verify">

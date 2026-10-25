@@ -2,6 +2,7 @@
  * See tokens.css for the token block and the critique stamp. Every colour and font below is a token reference. */
 
 @import url("tokens.css");
+@import url("fonts.css");
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -50,6 +51,7 @@ strong { font-weight: 600; }
 .btn--urgent { border-color: var(--color-urgent); background: var(--color-urgent); color: var(--color-on-accent); }
 .btn--urgent:hover { background: var(--color-urgent-ink); }
 .btn[aria-disabled="true"], .btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+.btn-note { display: block; font-size: var(--text-sm); color: var(--color-ink-2); margin-top: var(--space-xs); }
 
 /* Index strip on inner pages: the index repeated small, hairline-ruled */
 .strip { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); padding-block: var(--space-sm); border-bottom: var(--rule); font-size: var(--text-sm); }
@@ -102,13 +104,13 @@ main { padding-block: var(--space-xl) var(--space-3xl); }
 /* Directory */
 .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: var(--space-sm); margin-block: var(--space-lg); max-width: 56rem; }
 .filters label { display: grid; gap: var(--space-2xs); font-size: var(--text-sm); color: var(--color-ink-2); }
-select { font: inherit; padding: 0.5rem 0.6rem; min-height: 44px; border: 1.5px solid var(--color-rule); border-radius: var(--radius-sm); background: var(--color-paper); color: var(--color-ink); }
+select { font: inherit; padding: 0.5rem 0.6rem; min-height: 44px; border: 1.5px solid var(--color-ink-2); border-radius: var(--radius-sm); background: var(--color-paper); color: var(--color-ink); }
 select:focus-visible { border-color: var(--color-accent); }
 .notice { border-inline-start: 0; border: var(--rule); border-radius: var(--radius-md); padding: var(--space-md) var(--space-lg); background: var(--color-paper-2); max-width: var(--measure); font-size: var(--text-sm); }
 .list { list-style: none; padding: 0; margin: var(--space-lg) 0 0; border-top: var(--rule); max-width: 56rem; }
 .list li { margin: 0; border-bottom: var(--rule); padding-block: var(--space-md); display: grid; gap: var(--space-2xs) var(--space-lg); grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 40rem) { .list li { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr) auto; align-items: start; } }
-.list h3 { margin: 0; font-size: var(--text-md); }
+.list .name { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: var(--text-md); line-height: 1.2; }
 .list .meta { color: var(--color-ink-2); font-size: var(--text-sm); margin: 0; }
 .pill { display: inline-block; font-size: var(--text-xs); padding: 0.15rem 0.5rem; border: 1px solid var(--color-rule); border-radius: 999px; color: var(--color-ink-2); white-space: nowrap; }
 .pill--sample { border-color: var(--color-accent); color: var(--color-accent-ink); }

@@ -19,10 +19,14 @@
     var url = cfg.forms && cfg.forms[key];
     if (url) { el.href = url; el.target = "_blank"; el.rel = "noopener"; return; }
     var span = document.createElement("span");
-    span.className = el.classList.contains("btn") ? "btn" : "muted";
-    if (el.classList.contains("btn")) span.setAttribute("aria-disabled", "true");
-    span.textContent = el.classList.contains("btn") ? el.textContent + " (form opens here once connected)" : el.textContent + " (form coming soon)";
-    el.replaceWith(span);
+    if (el.classList.contains("btn")) {
+      span.className = "btn"; span.setAttribute("aria-disabled", "true"); span.textContent = el.textContent;
+      var note = document.createElement("span"); note.className = "btn-note"; note.textContent = "This form opens here once it is connected.";
+      el.replaceWith(span); span.insertAdjacentElement("afterend", note);
+    } else {
+      span.className = "muted"; span.textContent = el.textContent + " (form not yet connected)";
+      el.replaceWith(span);
+    }
   });
 
   // Directory
@@ -40,12 +44,14 @@
       rows.forEach(function (p) {
         var li = document.createElement("li");
         li.innerHTML =
-          "<div><h3>" + p.label + "</h3><p class=\"meta\">" + p.type + " · " + p.mode + " · " + p.area + "</p></div>" +
+          "<div><p class=\"name\">" + p.label + "</p><p class=\"meta\">" + p.type + " · " + p.mode + " · " + p.area + "</p></div>" +
           "<div><p class=\"meta\">" + p.focus + "</p><p class=\"meta\">Fee: " + p.fee + " · Languages: " + p.languages + "</p></div>" +
           "<div><span class=\"pill pill--sample\">" + p.status + "</span><p class=\"meta\">" + p.contact + "</p></div>";
         list.appendChild(li);
       });
       empty.hidden = rows.length > 0;
+      var count = document.getElementById("directory-count");
+      if (count) count.textContent = rows.length + (rows.length === 1 ? " listing shown" : " listings shown");
     }
     form.addEventListener("change", render);
     render();
@@ -57,7 +63,7 @@
     window.KADUA_COMMUNITIES.forEach(function (c) {
       var li = document.createElement("li");
       li.innerHTML =
-        "<div><h3>" + c.category + "</h3><p class=\"meta\">" + c.fil + "</p></div>" +
+        "<div><p class=\"name\">" + c.category + "</p><p class=\"meta\">" + c.fil + "</p></div>" +
         "<div><p class=\"meta\">" + c.description + "</p></div>" +
         "<div><span class=\"pill\">" + c.status + "</span></div>";
       com.appendChild(li);
