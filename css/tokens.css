@@ -1,29 +1,48 @@
-/* Hallmark · genre: editorial (warm, photo-led) · macrostructure: Marquee Hero with finder module · theme: custom (vibe: "calm premium companion, warm paper, deep green, one clay for crisis") · paper oklch(96.8% 0.012 85) · accent oklch(37% 0.07 165) deep green · nav: N1b (wordmark, four links, one urgent control) · footer: Ft1 mast-headed
- * pre-emit critique: P4 H5 E4 S4 R4 V4 */
+/* Kadua v3 tokens, from the Kadua brand guidelines sheet (received 2026-11-04).
+ * Brand palette: #3770bf blue (font and button colour), #cef26d lime (accent, button text),
+ * #8dc2ff sky, #f3f6ff page background. Titles: Barabara on the main page, Helvetica Bold
+ * elsewhere. Descriptions: Helvetica italic. Navigation: Helvetica Bold.
+ * Two working shades sit beside the palette for legibility only: #2f62a8 keeps small text at
+ * 4.5:1 or better on tinted panels, #2a5a9c is the text colour on lime. Lime is never a text
+ * colour on light backgrounds (it fails contrast); on blue it is used at large or bold sizes. */
 :root {
-  --color-paper:        #f7f5ef;
-  --color-paper-2:      #efece3;
-  --color-paper-3:      #e6e2d6;
-  --color-ink:          #2e2a28;
-  --color-ink-2:        #6b645f;
-  --color-rule:         #ddd8cc;
-  --color-accent:       #1f4a3d;
-  --color-accent-ink:   #163629;
-  --color-accent-soft:  #e4ece6;
-  --color-accent-mid:   #3d6b5a;
-  --color-urgent:       #b05a3a;
-  --color-urgent-ink:   #8f4228;
-  --color-urgent-soft:  #f6e8e1;
-  --color-on-accent:    #f7f5ef;
-  --color-focus:        #2f6fb5;
-  --color-surface:      #ffffff;
-  --shadow-card:        0 10px 30px -18px rgba(46, 42, 40, 0.35);
-  --shadow-sticky:      0 -10px 30px -22px rgba(46, 42, 40, 0.4);
-  --shadow-header:      0 1px 0 #ddd8cc, 0 10px 30px -22px rgba(46, 42, 40, 0.35);
-  --shadow-card-hover:  0 18px 40px -20px rgba(46, 42, 40, 0.45);
+  /* Brand palette, exactly as the guidelines give it */
+  --brand-blue:  #3770bf;
+  --brand-lime:  #cef26d;
+  --brand-sky:   #8dc2ff;
+  --brand-paper: #f3f6ff;
 
-  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
-  --font-body:    "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --color-paper:        var(--brand-paper);
+  --color-paper-2:      #e8eefc;
+  --color-paper-3:      #d6e2f7;
+  --color-ink:          var(--brand-blue);
+  --color-ink-2:        #2f62a8;
+  --color-rule:         #cfdcf3;
+  --color-accent:       var(--brand-blue);
+  --color-accent-ink:   #2f62a8;
+  --color-accent-soft:  #eaf8c6;
+  --color-accent-mid:   var(--brand-blue);
+  --color-on-accent:    var(--brand-lime);
+  --color-lime:         var(--brand-lime);
+  --color-sky:          var(--brand-sky);
+  /* Crisis controls: lime fill, deep-blue text and border. Lime is a fill nowhere else on
+     the site, so the help control stays the one thing that looks like it. */
+  --color-urgent:       var(--brand-lime);
+  --color-urgent-hover: #bde34f;
+  --color-urgent-ink:   #2a5a9c;
+  --color-urgent-soft:  #eef9d3;
+  --color-focus:        #1f4f8f;
+  --color-surface:      #ffffff;
+  --shadow-card:        0 10px 30px -18px rgba(31, 79, 143, 0.35);
+  --shadow-sticky:      0 -10px 30px -22px rgba(31, 79, 143, 0.4);
+  --shadow-header:      0 1px 0 #cfdcf3, 0 10px 30px -22px rgba(31, 79, 143, 0.35);
+  --shadow-card-hover:  0 18px 40px -20px rgba(31, 79, 143, 0.45);
+
+  /* Barabara is the brand title face. Until a licensed web file is placed at
+     fonts/Barabara.woff2, Coda ExtraBold (SIL OFL) stands in. See fonts.css. */
+  --font-brand:   "Barabara", "Coda", "Arial Black", sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body:    "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   --text-xs:   0.8125rem;
   --text-sm:   0.9375rem;
@@ -33,6 +52,7 @@
   --text-xl:   1.875rem;
   --text-2xl:  2.375rem;
   --text-display: clamp(2.5rem, 4.6vw + 1rem, 4.5rem);
+  --text-btn:  1.1875rem; /* 19px bold: lime on blue is 3.9:1, which passes AA only at large-text size */
 
   --space-2xs: 0.25rem; --space-xs: 0.5rem; --space-sm: 0.75rem; --space-md: 1rem; --space-lg: 1.5rem; --space-xl: 2rem; --space-2xl: 3rem; --space-3xl: 4.5rem; --space-4xl: 6.5rem;
   --page-gutter: clamp(1rem, 4vw, 3rem);

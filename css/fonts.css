@@ -1,3 +1,10 @@
-/* Self-hosted fonts (SIL Open Font License): Newsreader (display) and Figtree (text), latin subset, variable weight. No third-party requests. */
-@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("../fonts/Newsreader-variable.woff2") format("woff2"); }
-@font-face { font-family: "Figtree"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("../fonts/Figtree-variable.woff2") format("woff2"); }
+/* Fonts, per the Kadua brand guidelines.
+ * Helvetica is a licensed system font: Apple devices render real Helvetica, others fall back to
+ * Arial, so nothing is downloaded for body text.
+ * Barabara (by Choi Co, Manila) is the brand title face. To switch it on: put a licensed web
+ * copy at fonts/Barabara.woff2 and uncomment the line below. Every main-page title picks it up
+ * through --font-brand in tokens.css. Until then Coda ExtraBold (SIL Open Font License,
+ * self-hosted, latin subset) stands in. Do not use a copy pulled from a Canva export or a PDF:
+ * Canva's font license does not cover putting the file on a website. */
+/* @font-face { font-family: "Barabara"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/Barabara.woff2") format("woff2"); } */
+@font-face { font-family: "Coda"; font-style: normal; font-weight: 400 900; font-display: swap; src: url("../fonts/Coda-800-latin.woff2") format("woff2"); }

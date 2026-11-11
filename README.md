@@ -31,10 +31,23 @@ Immediate Help hub. No accounts, no database, no personal data stored.
 
 ## Design
 
-Tokens live in `css/tokens.css` (warm paper, deep green accent, one clay reserved for the crisis control;
-Newsreader and Figtree, self-hosted in `fonts/`). Photos are licensed Unsplash images, self-hosted in `img/`
-at two widths and credited in `img/CREDITS.md`. Motion is one fade-up per element on first view and small hover
-lifts (`js/motion.js`), all off under reduced-motion. Mobile-first, works at 320 px and up.
+Brand: the Kadua brand guidelines sheet (received 2026-11-04). Tokens live in `css/tokens.css`:
+page background #f3f6ff, text and buttons #3770bf, accent #cef26d, sky #8dc2ff. Buttons are blue
+with lime Helvetica Bold text. Crisis controls are lime with deep-blue text and border, and lime
+is a fill nowhere else, so the help button stays the one thing that looks like it.
+
+Type: home-page titles use Barabara (caps); every other title, the navigation and body text use
+Helvetica (Arial on devices without it); descriptions are Helvetica italic. Barabara is not on the
+site yet: Coda ExtraBold (OFL, self-hosted) stands in until a licensed web file is placed at
+`fonts/Barabara.woff2` and the commented line in `css/fonts.css` is switched on.
+
+Logos: `img/brand/` holds the official lockups (blue, lime, light, and a blue one without the
+tagline for the header) cropped from the brand files, plus the three symbol colours. The favicon
+is the lime symbol on a blue tile.
+
+Photos are licensed Unsplash images, self-hosted in `img/` at two widths and credited in
+`img/CREDITS.md`. Motion is one fade-up per element on first view and small hover lifts
+(`js/motion.js`), all off under reduced-motion. Mobile-first, works at 320 px and up.
 
 ## Run locally
 

@@ -14,3 +14,4 @@ All photographs are from Unsplash under the Unsplash License (free to use, attri
 - `bench-talk`: Two women talking on a bench. Photo by Amari Shutters on Unsplash (https://unsplash.com/photos/photo-1759593047536-5258c3c6a527).
 - `window-quiet`: Person seated by a large window. Photo by Adam Davis on Unsplash (https://unsplash.com/photos/photo-1693512998410-c932402be883).
 - `clipboard`: Counseling moment, hands and a clipboard. Photo by Vitaly Gariev on Unsplash (https://unsplash.com/photos/photo-1714976694609-6cf681844f18).
+- `walk-together`: Two students walking together under the trees, Quezon City (home page hero). Photo by Gerald Escamos on Unsplash (https://unsplash.com/photos/qMD6h5yjO5M).
