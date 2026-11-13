@@ -66,3 +66,21 @@ city's own health-center table (quezoncity.gov.ph/qcitizen-guides/quezon-city-he
 on this date. Barangay-run stations, UP Diliman, DOLE OSHC and private clinics were excluded. The service
 claim (free mental health consult for QC residents at city health centers) still rests on the city program
 page. Next check: when the city table is back, replace the OSM points with the official list and addresses.
+
+## 2026-11-14 expansion: Cavite, Laguna, Pampanga, Rizal
+
+| Entry | Free for | Basis |
+|---|---|---|
+| Tagaytay Katuwang sa Pangkalusugang Mental | all | Tagaytay Citizen's Charter 2025 1st ed. pp. 335-340, 386 (read in full). Section cover says "internal service" but each service is G2C, "All"; ask on the next call |
+| General Trias CHO Mental Health Program | clients with mental health issues, no residency rule | General Trias Citizen's Charter Handbook 2025 pp. 552-553. Pin is the barangay centre (approx) |
+| Carmona Mental Health Clinic | residents (assumed from PIA wording) | Manila Bulletin 15 Aug 2025 (snippet, page 403); PIA ~Jan 2025. No address or phone published |
+| Calamba CHO Mental Health Program | citizens; residency not stated | calambacity.gov.ph service pages 154 and 155 ("Walang babayaran") |
+| Biñan CHO II Mental Health Services | general population | Biñan Citizen's Charter 2025 1st ed. pp. 268-270 (read). No address, no pin |
+| Pampanga Provincial Care and Counseling Center | youth and families, by referral | SunStar Pampanga 28 Jul and 30 Jul 2026; Punto! inauguration story; PIA 1 Sep 2026 (snippet) |
+
+Held: Cavite Center for Mental Health (fee unknown), HealthISIP sites (not named; non-approved outlets), Dasmariñas CHO I,
+Rosario RHU, Trece Martires CHO (PhilHealth tags only), RLMMC Angeles (free only per The Voice Newsweekly; confirm on
+clinic FB), JBLMGH (fee unknown), Laguna "Akay ni Gob" psychiatrist consults (tabloids only, Nov 2026), Laguna Medical
+Center and DJPRMDH psychiatry (free not confirmed), San Pablo and Santa Rosa CHOs (third-party directories only),
+Cainta Municipal Hospital (free claim from 2019 only), Antipolo RHU III and ACHS Annex IV (no readable official source).
+Rizal has no confirmed entry; the page says so.

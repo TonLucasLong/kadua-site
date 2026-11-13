@@ -42,9 +42,15 @@
         nearBtn = document.getElementById("clinic-near"), detail = document.getElementById("clinic-detail"),
         mapBox = document.getElementById("loc-map"), here = null, qc = window.KADUA_QC_CENTERS || [], view = "map";
     var esc = function (t) { return String(t == null ? "" : t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-    var cities = []; window.KADUA_CLINICS.forEach(function (c) { if (cities.indexOf(c.city) < 0) cities.push(c.city); });
-    cities.sort().forEach(function (c) { var o = document.createElement("option"); o.textContent = c; citySel.appendChild(o); });
-    var labels = { free: "Free for everyone", residents: "Free for city residents" };
+    var provSel = document.getElementById("clinic-province");
+    function fillCities() {
+      var pv = provSel ? provSel.value : "", keep = citySel.value, cities = [];
+      window.KADUA_CLINICS.forEach(function (c) { if ((!pv || c.province === pv) && cities.indexOf(c.city) < 0) cities.push(c.city); });
+      citySel.length = 1; cities.sort().forEach(function (c) { var o = document.createElement("option"); o.textContent = c; citySel.appendChild(o); });
+      citySel.value = cities.indexOf(keep) >= 0 ? keep : "";
+    }
+    fillCities(); if (provSel) provSel.addEventListener("change", fillCities);
+    var labels = { free: "Free for everyone", residents: "Free for residents", referral: "Free, by referral" };
     var dirUrl = function (q) { return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q); };
     function km(a, b) { var r = Math.PI / 180, dLat = (b.lat - a.lat) * r, dLng = (b.lng - a.lng) * r;
       var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
@@ -67,7 +73,7 @@
         (c.schedule ? '<p class="meta"><b>When:</b> ' + esc(c.schedule) + '</p>' : '') +
         (c.howTo ? '<p class="meta"><b>How:</b> ' + esc(c.howTo) + '</p>' : '') +
         (isQc ? '' : '<p class="meta"><b>Address:</b> ' + esc(c.address) + '</p>') +
-        (!p && points(c).length === 0 ? '<p class="meta"><b>On the map:</b> no pin, ' + (c.city === "Online" ? 'this one is online.' : 'the city does not publish a single address.') + '</p>' : '') +
+        (c.approx ? '<p class="meta"><b>On the map:</b> the pin marks the barangay, not the exact building.</p>' : '') + (!p && points(c).length === 0 ? '<p class="meta"><b>On the map:</b> no pin, ' + (c.city === "Online" ? 'this one is online.' : 'the city does not publish a single address.') + '</p>' : '') +
         '<div class="clinic__actions">' + (c.city !== "Online" ? '<a class="btn btn--sm" href="' + dirUrl(dq) + '" target="_blank" rel="noopener">Directions</a>' : '') + tels + (c.link ? '<a class="btn btn--ghost btn--sm" href="' + esc(c.link) + '" target="_blank" rel="noopener">' + esc(c.linkLabel || "Official page") + '</a>' : '') + '</div>' +
         '<p class="meta clinic__src">Confirmed from <a href="' + esc(c.source.url) + '" target="_blank" rel="noopener">' + esc(c.source.label) + '</a>.' + (isQc ? ' Pin location from OpenStreetMap.' : '') + ' Last checked ' + esc(c.checked) + '.</p>' +
         '</div>';
@@ -97,7 +103,7 @@
     function renderClinics(fit) {
       var f = {}; cf.querySelectorAll("select").forEach(function (s) { f[s.name] = s.value; });
       var rows = window.KADUA_CLINICS.filter(function (c) {
-        return (!f.city || c.city === f.city) && (!f.free || c.free === f.free) && (!f.access || (c.access || []).indexOf(f.access) >= 0); });
+        return (!f.province || c.province === f.province) && (!f.city || c.city === f.city) && (!f.free || c.free === f.free) && (!f.access || (c.access || []).indexOf(f.access) >= 0); });
       rows.forEach(function (c) { var n = here ? nearest(c) : null; c._d = n ? n.d : null; c._np = n ? n.p : null; });
       if (here) rows.sort(function (a, b) { return (a._d == null ? 1e9 : a._d) - (b._d == null ? 1e9 : b._d); });
       cl.innerHTML = "";
@@ -118,7 +124,7 @@
         if (fit !== false && b.length) map.fitBounds(b, { padding: [30, 30], maxZoom: 14 });
       }
       cEmpty.hidden = rows.length > 0;
-      if (!rows.length) cEmpty.innerHTML = 'No free clinic on our list matches those filters yet. Try "All of Metro Manila", or check the national services under <a href="immediate-help.html">Immediate Help</a>.';
+      if (!rows.length) cEmpty.innerHTML = 'No free clinic on our list matches those filters yet. Try "All areas", or check the national services under <a href="immediate-help.html">Immediate Help</a>.';
       cStatus.textContent = view === "map"
         ? nPins + (nPins === 1 ? " place" : " places") + " on the map. Tap a pin."
         : rows.length + (rows.length === 1 ? " service" : " services") + (here ? ", nearest first" : "");
