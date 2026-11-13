@@ -28,3 +28,32 @@ report suggests a change. Full research record: the vault file
 Due 2027-01-23. Owner: Content and Professional Verification. Steps: open each
 operator's own page in a browser, call each number once during office hours to confirm it
 connects, update `js/config.js` lastChecked and this log.
+
+# Free consultation locator log (free-consult.html, data in data/clinics.js)
+
+Rule: listed only when the operator's own page, a government agency, or a dated major-outlet
+report confirms the consultation itself is free and says who it is free for. Low-fee, free-medicine-only,
+or fee-unconfirmed places stay off. Several *.gov.ph sites (NCMH, DOH hospitals) block automated
+fetching, so those were read through official-domain search results plus news; open them in a
+browser on the next check.
+
+## 2026-11-14 check
+
+| Entry | Free for | Basis |
+|---|---|---|
+| NCMH Adult Out-Patient Section, Mandaluyong | everyone (online consult) | NCMH Citizen's Charter 2024 6th ed. ("no fee" online consult); Philstar Life 30 Sep 2026; Bulatlat 8 Aug 2026. Face-to-face fee unconfirmed |
+| UP-PGH Psychiatry OPD, Manila | everyone (charity OPD) | pgh.gov.ph psychiatry page and OCRA page (fetched); Philstar Life 30 Sep 2026 |
+| Quezon City health centers (67) | QC residents | quezoncity.gov.ph program page, updated 20 May 2025; helpline 122 per Philstar 11 Oct 2024 and city page |
+| QC Mental Wellness Access Hubs (6) | qualified QC patients | quezoncity.gov.ph hub guide, updated 25 Jul 2025. Hub addresses not published in text, so no map point |
+| Caloocan Calm Space | free; residency not stated | Philstar Life 30 Sep 2026. Manila Bulletin 12 May 2026 described relaxation services with counseling planned; reconfirm by phone |
+| Taguig City Health Office mental health consult | Taguig residents | taguig.gov.ph free medical services page (undated, footer 2024). Phone numbers only on a volunteer directory, so none listed |
+| Ateneo Bulatao Center Brief Psychological Services | any Filipino 18+ (1-2 sessions) | bulataocenter.ateneo.edu service page; Philstar Life 30 Sep 2026 |
+
+Held off the page: EAMC, QMMC, Amang Rodriguez (fee not confirmed free / sliding scale), JRRMMC and
+Manila and Pasig health centers (free medicines only, used in a note), Makati Health Plus telehealth and
+UST TMHR (latest confirmation 2024), PMHA (paid), UP Diliman PsycServ (UP community only), Manila
+Health Department clinic (volunteer directory only), Muntinlupa, Marikina, Valenzuela, QCGH online
+psychiatry (no 2025-2026 confirmation). PhilHealth outpatient mental health package shown as a
+coverage note, not "free" (PhilHealth 5 Mar 2025; co-pay and non-member access unconfirmed).
+
+Next recheck due 2027-02-12.

@@ -12,6 +12,7 @@ Immediate Help hub. No accounts, no database, no personal data stored.
 | `index.html` Home: four doors, what Kadua is and isn't, how it works | Executive summary; §I.A problem; §VII user journey (step 2 "choose a need") |
 | `immediate-help.html` verified hotlines, what to expect, how the page is kept right | §IV.A.1 Immediate Help/Safety Hub; §III.C "documented process for checking accuracy" |
 | `find-support.html` filterable directory (sample entries), verification steps, apply | §IV.A.1 Professional Support "curated directory and search/filter"; §III.C verification before publication and re-verification |
+| `free-consult.html` free mental health consultation locator: city, free-for, and access filters, nearest-first sort computed in the browser, directions and call buttons, source and last-checked date per entry | §IV.A.1 Professional Support; §III.C verification. Data in `data/clinics.js`, checks in `VERIFICATION-LOG.md` |
 | `self-care.html` five guides, Phase 2 product interest form | §IV.A.1 Self-Care "educational resources and a small product catalog"; Appendix A Phase 2 go/no-go evidence (demand) |
 | `community.html` categories, participation rules, join or organize forms | §IV.A.1 Community and Hobbies "curated listings/partner groups"; §II.A partnerships; §III.C participation rules, reporting, moderation |
 | `about.html` name rationale, four areas, is and isn't, roadmap, team units, privacy, feedback | §I.B rationale; §III.B organizational structure; §III.D privacy as a core design requirement; Appendix A roadmap |
