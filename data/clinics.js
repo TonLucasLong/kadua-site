@@ -3,6 +3,7 @@
 // report from a major outlet confirms the CONSULTATION is free and says who it is free for.
 // Places that are only low-fee, only give free medicines, or whose fee we could not confirm stay off.
 // Record every check in VERIFICATION-LOG.md. Recheck every 90 days.
+// group "qc" = pins come from data/qc-health-centers.js (one pin per center).
 // Fields: name, unit, city, address, lat, lng (null = no single location; sorted last by distance),
 // free ("free" | "residents"), what, access (["walk-in","appointment","online"]), schedule, howTo,
 // phones [{label, tel}], link, linkLabel, mapQuery, source {label, url}, checked
@@ -43,6 +44,7 @@ window.KADUA_CLINICS = [
   },
   {
     name: "Quezon City Health Centers",
+    group: "qc",
     unit: "Mental health services at all 67 city health centers",
     city: "Quezon City",
     address: "Your nearest Quezon City health center (67 across the city)",

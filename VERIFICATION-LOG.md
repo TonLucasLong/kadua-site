@@ -57,3 +57,12 @@ psychiatry (no 2025-2026 confirmation). PhilHealth outpatient mental health pack
 coverage note, not "free" (PhilHealth 5 Mar 2025; co-pay and non-member access unconfirmed).
 
 Next recheck due 2027-02-12.
+
+## 2026-11-14 map added
+
+The free-consult page now has a map (Leaflet 1.9.4 self-hosted in vendor/leaflet, OpenStreetMap tiles).
+Quezon City health center pins (data/qc-health-centers.js, 38 points) come from OpenStreetMap because the
+city's own health-center table (quezoncity.gov.ph/qcitizen-guides/quezon-city-health-centers/) returned 404
+on this date. Barangay-run stations, UP Diliman, DOLE OSHC and private clinics were excluded. The service
+claim (free mental health consult for QC residents at city health centers) still rests on the city program
+page. Next check: when the city table is back, replace the OSM points with the official list and addresses.

@@ -261,3 +261,19 @@ body.is-help.has-sticky { padding-bottom: 0; }
 .clinic__src { border-top: var(--rule); padding-top: var(--space-xs); margin-top: var(--space-xs) !important; }
 .fil-line { color: var(--color-ink-2); margin-top: var(--space-sm); }
 .small { font-size: var(--text-xs); }
+.clinic-map { height: min(68vh, 34rem); min-height: 22rem; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); margin-block: var(--space-sm) var(--space-xs); z-index: 0; background: var(--color-paper-2); }
+.map-key { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-md); font-size: var(--text-xs); color: var(--color-ink-2); margin: 0 0 var(--space-lg); }
+.kpin { position: relative; }
+.kpin > span { position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--color-accent); border: 2px solid #fff; box-shadow: 0 2px 6px rgba(20, 40, 80, .35); }
+.kpin > span::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: var(--color-lime); }
+.kpin--qc > span { background: #fff; border-color: var(--color-accent); }
+.kpin--qc > span::after { background: var(--color-accent); }
+.kpin--key { display: inline-block; width: 18px; height: 20px; vertical-align: middle; }
+.kpin--key > span { width: 16px; height: 16px; border-width: 1.5px; box-shadow: none; }
+.kpin--key > span::after { width: 6px; height: 6px; margin: -3px 0 0 -3px; }
+.kpop { display: grid; gap: 4px; font-family: var(--font-body); font-size: 13px; line-height: 1.4; color: var(--color-ink); min-width: 12rem; }
+.kpop .pill { justify-self: start; }
+.kpop b { font-size: 14px; }
+.kpop__actions a { font-weight: 700; }
+.leaflet-container { font-family: var(--font-body); }
+.leaflet-container a { color: var(--color-accent-ink); }
